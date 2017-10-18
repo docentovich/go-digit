@@ -1,0 +1,244 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$advantages1-l-name: 'advantages1_l';
+$advantages1-l-x: 0px;
+$advantages1-l-y: 257px;
+$advantages1-l-offset-x: 0px;
+$advantages1-l-offset-y: -257px;
+$advantages1-l-width: 179px;
+$advantages1-l-height: 127px;
+$advantages1-l-total-width: 565px;
+$advantages1-l-total-height: 434px;
+$advantages1-l-image: './app/images/sprite.png';
+$advantages1-l: (0px, 257px, 0px, -257px, 179px, 127px, 565px, 434px, './app/images/sprite.png', 'advantages1_l', );
+$advantages1-m-name: 'advantages1_m';
+$advantages1-m-x: 438px;
+$advantages1-m-y: 229px;
+$advantages1-m-offset-x: -438px;
+$advantages1-m-offset-y: -229px;
+$advantages1-m-width: 105px;
+$advantages1-m-height: 75px;
+$advantages1-m-total-width: 565px;
+$advantages1-m-total-height: 434px;
+$advantages1-m-image: './app/images/sprite.png';
+$advantages1-m: (438px, 229px, -438px, -229px, 105px, 75px, 565px, 434px, './app/images/sprite.png', 'advantages1_m', );
+$advantages1-s-name: 'advantages1_s';
+$advantages1-s-x: 75px;
+$advantages1-s-y: 385px;
+$advantages1-s-offset-x: -75px;
+$advantages1-s-offset-y: -385px;
+$advantages1-s-width: 69px;
+$advantages1-s-height: 49px;
+$advantages1-s-total-width: 565px;
+$advantages1-s-total-height: 434px;
+$advantages1-s-image: './app/images/sprite.png';
+$advantages1-s: (75px, 385px, -75px, -385px, 69px, 49px, 565px, 434px, './app/images/sprite.png', 'advantages1_s', );
+$advantages2-l-name: 'advantages2_l';
+$advantages2-l-x: 221px;
+$advantages2-l-y: 0px;
+$advantages2-l-offset-x: -221px;
+$advantages2-l-offset-y: 0px;
+$advantages2-l-width: 216px;
+$advantages2-l-height: 125px;
+$advantages2-l-total-width: 565px;
+$advantages2-l-total-height: 434px;
+$advantages2-l-image: './app/images/sprite.png';
+$advantages2-l: (221px, 0px, -221px, 0px, 216px, 125px, 565px, 434px, './app/images/sprite.png', 'advantages2_l', );
+$advantages2-m-name: 'advantages2_m';
+$advantages2-m-x: 438px;
+$advantages2-m-y: 0px;
+$advantages2-m-offset-x: -438px;
+$advantages2-m-offset-y: 0px;
+$advantages2-m-width: 127px;
+$advantages2-m-height: 74px;
+$advantages2-m-total-width: 565px;
+$advantages2-m-total-height: 434px;
+$advantages2-m-image: './app/images/sprite.png';
+$advantages2-m: (438px, 0px, -438px, 0px, 127px, 74px, 565px, 434px, './app/images/sprite.png', 'advantages2_m', );
+$advantages2-s-name: 'advantages2_s';
+$advantages2-s-x: 313px;
+$advantages2-s-y: 257px;
+$advantages2-s-offset-x: -313px;
+$advantages2-s-offset-y: -257px;
+$advantages2-s-width: 83px;
+$advantages2-s-height: 49px;
+$advantages2-s-total-width: 565px;
+$advantages2-s-total-height: 434px;
+$advantages2-s-image: './app/images/sprite.png';
+$advantages2-s: (313px, 257px, -313px, -257px, 83px, 49px, 565px, 434px, './app/images/sprite.png', 'advantages2_s', );
+$advantages3-l-name: 'advantages3_l';
+$advantages3-l-x: 0px;
+$advantages3-l-y: 0px;
+$advantages3-l-offset-x: 0px;
+$advantages3-l-offset-y: 0px;
+$advantages3-l-width: 220px;
+$advantages3-l-height: 125px;
+$advantages3-l-total-width: 565px;
+$advantages3-l-total-height: 434px;
+$advantages3-l-image: './app/images/sprite.png';
+$advantages3-l: (0px, 0px, 0px, 0px, 220px, 125px, 565px, 434px, './app/images/sprite.png', 'advantages3_l', );
+$advantages3-m-name: 'advantages3_m';
+$advantages3-m-x: 180px;
+$advantages3-m-y: 257px;
+$advantages3-m-offset-x: -180px;
+$advantages3-m-offset-y: -257px;
+$advantages3-m-width: 132px;
+$advantages3-m-height: 75px;
+$advantages3-m-total-width: 565px;
+$advantages3-m-total-height: 434px;
+$advantages3-m-image: './app/images/sprite.png';
+$advantages3-m: (180px, 257px, -180px, -257px, 132px, 75px, 565px, 434px, './app/images/sprite.png', 'advantages3_m', );
+$advantages3-s-name: 'advantages3_s';
+$advantages3-s-x: 438px;
+$advantages3-s-y: 305px;
+$advantages3-s-offset-x: -438px;
+$advantages3-s-offset-y: -305px;
+$advantages3-s-width: 84px;
+$advantages3-s-height: 49px;
+$advantages3-s-total-width: 565px;
+$advantages3-s-total-height: 434px;
+$advantages3-s-image: './app/images/sprite.png';
+$advantages3-s: (438px, 305px, -438px, -305px, 84px, 49px, 565px, 434px, './app/images/sprite.png', 'advantages3_s', );
+$advantages4-l-name: 'advantages4_l';
+$advantages4-l-x: 0px;
+$advantages4-l-y: 126px;
+$advantages4-l-offset-x: 0px;
+$advantages4-l-offset-y: -126px;
+$advantages4-l-width: 210px;
+$advantages4-l-height: 130px;
+$advantages4-l-total-width: 565px;
+$advantages4-l-total-height: 434px;
+$advantages4-l-image: './app/images/sprite.png';
+$advantages4-l: (0px, 126px, 0px, -126px, 210px, 130px, 565px, 434px, './app/images/sprite.png', 'advantages4_l', );
+$advantages4-m-name: 'advantages4_m';
+$advantages4-m-x: 438px;
+$advantages4-m-y: 75px;
+$advantages4-m-offset-x: -438px;
+$advantages4-m-offset-y: -75px;
+$advantages4-m-width: 123px;
+$advantages4-m-height: 76px;
+$advantages4-m-total-width: 565px;
+$advantages4-m-total-height: 434px;
+$advantages4-m-image: './app/images/sprite.png';
+$advantages4-m: (438px, 75px, -438px, -75px, 123px, 76px, 565px, 434px, './app/images/sprite.png', 'advantages4_m', );
+$advantages4-s-name: 'advantages4_s';
+$advantages4-s-x: 180px;
+$advantages4-s-y: 333px;
+$advantages4-s-offset-x: -180px;
+$advantages4-s-offset-y: -333px;
+$advantages4-s-width: 78px;
+$advantages4-s-height: 48px;
+$advantages4-s-total-width: 565px;
+$advantages4-s-total-height: 434px;
+$advantages4-s-image: './app/images/sprite.png';
+$advantages4-s: (180px, 333px, -180px, -333px, 78px, 48px, 565px, 434px, './app/images/sprite.png', 'advantages4_s', );
+$advantages5-l-name: 'advantages5_l';
+$advantages5-l-x: 221px;
+$advantages5-l-y: 126px;
+$advantages5-l-offset-x: -221px;
+$advantages5-l-offset-y: -126px;
+$advantages5-l-width: 195px;
+$advantages5-l-height: 130px;
+$advantages5-l-total-width: 565px;
+$advantages5-l-total-height: 434px;
+$advantages5-l-image: './app/images/sprite.png';
+$advantages5-l: (221px, 126px, -221px, -126px, 195px, 130px, 565px, 434px, './app/images/sprite.png', 'advantages5_l', );
+$advantages5-m-name: 'advantages5_m';
+$advantages5-m-x: 438px;
+$advantages5-m-y: 152px;
+$advantages5-m-offset-x: -438px;
+$advantages5-m-offset-y: -152px;
+$advantages5-m-width: 113px;
+$advantages5-m-height: 76px;
+$advantages5-m-total-width: 565px;
+$advantages5-m-total-height: 434px;
+$advantages5-m-image: './app/images/sprite.png';
+$advantages5-m: (438px, 152px, -438px, -152px, 113px, 76px, 565px, 434px, './app/images/sprite.png', 'advantages5_m', );
+$advantages5-s-name: 'advantages5_s';
+$advantages5-s-x: 0px;
+$advantages5-s-y: 385px;
+$advantages5-s-offset-x: 0px;
+$advantages5-s-offset-y: -385px;
+$advantages5-s-width: 74px;
+$advantages5-s-height: 49px;
+$advantages5-s-total-width: 565px;
+$advantages5-s-total-height: 434px;
+$advantages5-s-image: './app/images/sprite.png';
+$advantages5-s: (0px, 385px, 0px, -385px, 74px, 49px, 565px, 434px, './app/images/sprite.png', 'advantages5_s', );
+$spritesheet-width: 565px;
+$spritesheet-height: 434px;
+$spritesheet-image: './app/images/sprite.png';
+$spritesheet-sprites: ($advantages1-l, $advantages1-m, $advantages1-s, $advantages2-l, $advantages2-m, $advantages2-s, $advantages3-l, $advantages3-m, $advantages3-s, $advantages4-l, $advantages4-m, $advantages4-s, $advantages5-l, $advantages5-m, $advantages5-s, );
+$spritesheet: (565px, 434px, './app/images/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

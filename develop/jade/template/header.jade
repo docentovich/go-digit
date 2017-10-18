@@ -1,0 +1,30 @@
+include ../includes/bemto
+include ../includes/mixins
+
+mixin doc-header()
+  head
+      meta(charset='utf-8')
+      meta(name='description', content='')
+      meta(name='keywords', content='')
+      meta(content='IE=edge')&attributes({'http-equiv': "X-UA-Compatible"})
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      title Diggit – откопай себе сайтик
+      link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet")
+      link(rel='icon', href='js.png', type='image/x-icon')  
+      //- link(href="libs/font-awesome-4.7.0/css/font-awesome.min.css", rel='stylesheet')
+      
+      // build:css css/vendor.css    
+      link(href='libs/bootstrap.css', rel='stylesheet')
+      link(href='libs/slick/slick.css', rel='stylesheet')
+      //-link(href='libs/slick/slick-theme.css', rel='stylesheet')
+      //- link(href='libs/fancybox/jquery.fancybox.css', rel='stylesheet')
+      // endbuild
+      // build:css css/main.css
+      link(href='css/main.css', rel='stylesheet')
+      // endbuild 
+      //[if lte IE 9]>
+            <script src="libs/ie/html5shiv.js"></script>
+            <script src="libs/ie/respond.src.js"></script>
+            <script src="libs/ie/respond.matchmedia.addListener.src.js"></script>
+            <script src="libs/polyfills/background_size_emu.js"></script>
+            <![endif]

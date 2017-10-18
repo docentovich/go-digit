@@ -1,0 +1,23 @@
+mixin doc-footer()
+    // build:js js/vendor.js 
+    script(src='libs/jquery.min.js')
+    script(src='libs/bootstrap.min.js')
+    script(src='libs/polyfills/placeholders.min.js')
+    script(src='libs/picturefill.min.js')
+    script(src='libs/slick/slick.min.js')
+    script(src='libs/jquery.maskedinput-1.4.1.min.js')
+    //- script(src="libs/fontawsome.js")
+    //- script(src='libs/validation/jquery.validate.min')
+    //- script(src='libs/validation/additional-methods.min')
+
+    //- script(src='libs/modernizr-custom.js')
+    //- script(src='libs/fancybox/jquery.fancybox.min.js')
+    //- script(src='libs/jquery-migrate-3.0.0.min.js')
+    //- script(src='libs/jquery.mousewheel-3.0.6.pack.js')
+    //- script(src='libs/jquery.viewport.js')
+    //- script(src='libs/jquery.cookie.js')
+    // endbuild
+    // build:js js/main.js
+    script(src='js/bem.js')
+    script(src='js/main.js')
+    // endbuild

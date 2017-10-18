@@ -1,0 +1,13 @@
+include template/header
+include template/footer
+include ../blocks/**/*
+- var alias = "m"
+doctype
+html(lang='ru')
+  +doc-header
+  body.pageload.no-js
+    +wrapper
+      +start
+      +questions
+      +final
+    +doc-footer
