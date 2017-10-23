@@ -1,0 +1,13 @@
+- var clients = [{src: "images/client1.png"},{src: "images/client2.png"},{src: "images/client3.png"},{src: "images/client4.png"},]
+
+mixin clients()
+  +b.SECTION.clients
+    +e.inner
+      +e.H2.heading
+        | Наши клиенты
+      +e.slider
+        for client in clients
+          +e.slide
+           img(src="#{client.src}")
+          
+          
