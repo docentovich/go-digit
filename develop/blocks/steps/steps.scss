@@ -1,0 +1,170 @@
+.steps {
+    font-family: $opsans;
+
+    background-color: #f2f2f2;
+}
+
+.steps__inner {
+    @include container(40px);
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.steps__heading {
+    @include heading();
+
+    margin-bottom: 95px;
+}
+
+.steps__step {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.steps__mark {
+    position: relative;
+    flex: 0 1 auto;
+    width: 30%;
+}
+
+.steps__mark-number {
+    float: right;
+
+    color: #fff;
+    font-size: 422px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.steps__mark-title {
+    position: absolute;
+    bottom: 44px;
+    left: 0;
+
+    color: $themecolor;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.steps__info {
+    flex: 1 1 auto;
+    width: 50%;
+    padding-left: 35px;
+}
+
+.steps__title {
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+    color: #191919;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.steps__info .steps__title:first-child {
+    margin-top: 0;
+}
+
+.steps__text {
+    margin: 0;
+
+    color: #191919;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+@media (max-width: 1023px) {
+    .steps__step {
+        margin-bottom: 100px;
+    }
+
+    .steps__mark {
+        width: 35%;
+    }
+
+    .steps__mark-number {
+        font-size: 360px;
+    }
+
+    .steps__mark-title {
+        font-size: 24px;
+        bottom: 32px;
+    }
+
+    .steps__title {
+        font-size: 18px;
+    }
+
+    .steps__text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .steps__inner {
+        padding-top: 60px;
+    }
+
+    .steps__heading {
+        margin-bottom: 55px;
+    }
+
+    .steps__step {
+        display: block;
+        margin-bottom: 70px;
+    }
+
+    .steps__mark-number {
+        float: none;
+    }
+
+    .steps__info {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .steps__inner {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .steps__step {
+        margin-bottom: 20px;
+    }
+
+    .steps__heading {
+        margin-bottom: 25px;
+    }
+
+    .steps__mark {
+        margin-bottom: 5px;
+    }
+
+    .steps__mark-number {
+        font-size: 95px;
+    }
+
+    .steps__mark-title {
+        font-size: 13px;
+        bottom: 8px;
+    }
+
+    .steps__title {
+        margin-top: 15px;
+        margin-bottom: 3px;
+
+        font-size: 12px;
+    }
+
+    .steps__text {
+        font-size: 10px;
+    }
+}
