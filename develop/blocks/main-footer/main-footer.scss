@@ -1,18 +1,19 @@
 .main-footer {
-  @include container;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  padding-top: 15px;
-  padding-bottom: 15px;
-  
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  
+  background-color: #1f1f1f;
+
   font-family: $opsans;
+}
+
+.main-footer__inner {
+    @include container;
+
+    padding-top: 70px;
+    padding-bottom: 45px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-footer__logo {
@@ -26,7 +27,7 @@
   margin-bottom: 15px;
   border-radius: 13%/50%;
   border: 1px solid #3eb5f1;
-  
+
   color: #f2f2f2;
   font-size: 20px;
   font-weight: 300;
@@ -34,7 +35,7 @@
 
 .main-footer__text {
   padding: 0 12px;
-  
+
   color: #f2f2f2;
   font-size: 18px;
   font-weight: 300;
@@ -52,16 +53,16 @@
     width: 98px;
     height: 44px;
   }
-  
+
   .main-footer__tel {
     padding: 9px 12px;
-    
+
     font-size: 14px;
   }
-  
+
   .main-footer__text {
     padding: 0 8px;
-    
+
     font-size: 13px;
   }
 }

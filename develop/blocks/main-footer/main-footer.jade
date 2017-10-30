@@ -1,9 +1,10 @@
 mixin main-footer()
-  +b.HEADER.main-footer
-    +e.logo
-      img(src="", alt="")
-    +e.contacts
-      +e.tel
-        | +7 (923) 882-32-83
-      +e.text
-        | Есть вопросы? Звони!
+  +b.FOOTER.main-footer
+    +e.inner
+        +e.logo
+            img(src="", alt="")
+        +e.contacts
+            +e.tel
+                | +7 (923) 882-32-83
+            +e.text
+                | Есть вопросы? Звони!

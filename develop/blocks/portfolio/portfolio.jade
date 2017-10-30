@@ -1,13 +1,13 @@
 - var portfolio = [{title: "text", href: "#1"},{title: "text", href: "#2"},{title: "text", href: "#3"},{title: "text", href: "#4"},{title: "text", href: "#5"},{title: "text", href: "#6"}]
 
 mixin portfolio()
-  +b.SECTION.portfolio
-    +e.inner
-      +e.H2.heading
-        | 5 лет мы помогаем клиентам выделиться из тысяч однотипных сайтов
-      +e.UL.list
-        for item in portfolio
-          +e.LI.item
-            +e.A.link(href="#{item.href}", title="#{item.title}")
-      +e.BUTTON.btn
-        | Показать все проекты
+    +b.SECTION.portfolio
+        +e.inner
+            +e.H2.heading
+                | 5 лет мы помогаем клиентам выделиться из тысяч однотипных сайтов
+            +e.UL.list
+                for item in portfolio
+                    +e.LI.item
+                        +e.A.link(href="#{item.href}", title="#{item.title}")
+            +e.BUTTON.btn
+                | Показать все проекты
