@@ -1,7 +1,7 @@
 .main-footer {
-  background-color: #1f1f1f;
+    background-color: #1f1f1f;
 
-  font-family: $opsans;
+    font-family: $opsans;
 }
 
 .main-footer__inner {
@@ -17,52 +17,57 @@
 }
 
 .main-footer__logo {
-  width: 150px;
-  height: 75px;
-  background-color: #eee;
+    width: 150px;
+    height: 75px;
+    background-color: #eee;
 }
 
 .main-footer__tel {
-  padding: 12px 19px;
-  margin-bottom: 15px;
-  border-radius: 13%/50%;
-  border: 1px solid #3eb5f1;
+    padding: 12px 19px;
+    margin-bottom: 15px;
+    border-radius: 13%/50%;
+    border: 1px solid #3eb5f1;
 
-  color: #f2f2f2;
-  font-size: 20px;
-  font-weight: 300;
+    color: #f2f2f2;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .main-footer__text {
-  padding: 0 12px;
+    padding: 0 12px;
 
-  color: #f2f2f2;
-  font-size: 18px;
-  font-weight: 300;
+    color: #f2f2f2;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 @media (max-width: 767px) {
-  .main-footer {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
+    .main-footer {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
 
 @media (max-width: 480px) {
-  .main-footer__logo {
-    width: 98px;
-    height: 44px;
-  }
+    .main-footer__inner {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
 
-  .main-footer__tel {
-    padding: 9px 12px;
+    .main-footer__logo {
+        width: 98px;
+        height: 44px;
+    }
 
-    font-size: 14px;
-  }
+    .main-footer__tel {
+        padding: 9px 12px;
 
-  .main-footer__text {
-    padding: 0 8px;
+        font-size: 14px;
+    }
 
-    font-size: 13px;
-  }
+    .main-footer__text {
+        padding: 0 8px;
+
+        font-size: 13px;
+    }
 }

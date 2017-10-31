@@ -525,6 +525,47 @@ div.pagination ul li a span {
   .clients__slide:not(:first-child) {
     margin-left: 15px; } }
 
+.fixed-nav {
+  position: fixed;
+  top: 170px;
+  right: 20px;
+  z-index: 999;
+  color: #000; }
+
+.fixed-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.fixed-nav__item.is-selected .fixed-nav__dot {
+  background-color: #3eb5f1; }
+  .fixed-nav__item.is-selected .fixed-nav__dot::before, .fixed-nav__item.is-selected .fixed-nav__dot::after {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 1px;
+    top: 49%;
+    background-color: #dcdcdc;
+    right: -25px; }
+  .fixed-nav__item.is-selected .fixed-nav__dot::after {
+    left: -25px; }
+
+.fixed-nav__link {
+  display: block;
+  padding: 9px; }
+
+.fixed-nav__dot {
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 50%; }
+
+@media (max-width: 480px) {
+  .fixed-nav {
+    display: none; } }
+
 .main-footer {
   background-color: #1f1f1f;
   font-family: "Open Sans", Helvetica, Arial, sans-serif; }
@@ -590,6 +631,9 @@ div.pagination ul li a span {
     padding-bottom: 15px; } }
 
 @media (max-width: 480px) {
+  .main-footer__inner {
+    padding-top: 30px;
+    padding-bottom: 15px; }
   .main-footer__logo {
     width: 98px;
     height: 44px; }
@@ -840,6 +884,80 @@ div.pagination ul li a span {
       padding: 9px 14px;
       font-size: 12px; } }
 
+@media (max-width: 767px) {
+  .partnership__inner {
+    padding: 60px 40px 40px; }
+  .partnership__list::after {
+    background-image: none; }
+  .partnership__item {
+    position: relative;
+    height: auto;
+    margin-bottom: 80px; }
+    .partnership__item::before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      top: 35px;
+      right: -75%;
+      -webkit-transform: translateX(-50%);
+         -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      background-color: #fff;
+      border-radius: 50%; }
+    .partnership__item::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: -webkit-calc(100% - 94px);
+      height: -moz-calc(100% - 94px);
+      height: calc(100% - 94px);
+      top: 42px;
+      right: -70%;
+      -webkit-transform: translateX(-50%);
+         -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      background-color: #fff; }
+    .partnership__item:nth-child(2n)::before {
+      left: -74%;
+      -webkit-transform: translateX(50%);
+         -moz-transform: translateX(50%);
+          -ms-transform: translateX(50%);
+              transform: translateX(50%); }
+    .partnership__item:nth-child(2n)::after {
+      left: -69%;
+      -webkit-transform: translateX(50%);
+         -moz-transform: translateX(50%);
+          -ms-transform: translateX(50%);
+              transform: translateX(50%); }
+    .partnership__item:nth-child(2) {
+      margin-top: 55px; }
+  .partnership__number {
+    font-size: 50px;
+    line-height: 1.95;
+    border-width: 5px; }
+  .partnership__text {
+    font-size: 16px; } }
+
+@media (max-width: 767px) {
+  .partnership__inner {
+    padding: 35px 20px 30px; }
+  .partnership__heading {
+    margin-bottom: 30px; }
+  .partnership__item {
+    margin-bottom: 45px; }
+    .partnership__item:nth-child(3) {
+      margin-top: -95px; }
+  .partnership__number {
+    font-size: 30px;
+    line-height: 1.95;
+    border-width: 2px; }
+  .partnership__text {
+    font-size: 10px;
+    line-height: 1.2; } }
+
 .portfolio {
   font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 
@@ -911,7 +1029,6 @@ div.pagination ul li a span {
   .portfolio__item:nth-of-type(n+5) {
     display: none; }
 
-.portfolio__list.all .portfolio__item
 .portfolio__link {
   display: block;
   position: relative;
@@ -1144,8 +1261,8 @@ div.pagination ul li a span {
   width: 100%;
   max-width: 1152px;
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top: 80px;
   padding-bottom: 150px; }
   @media (max-width: 767px) {
