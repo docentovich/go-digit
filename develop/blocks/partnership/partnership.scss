@@ -51,6 +51,7 @@
 }
 
 .partnership__item {
+    position: relative;
     width: 30%;
     margin-right: 40%;
     margin-bottom: 100px;
@@ -115,57 +116,95 @@
     text-transform: uppercase;
 }
 
+@media (max-width: 1100px) {
+    .partnership__list {
+        &::after {
+            background-image: none;
+            display: none;
+        }
+    }
+
+
+    .partnership__divider {
+        position: absolute;
+        width: 333.33%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 50%;
+            top: 45%;
+            transform: translateX(-50%);
+
+            border-radius: 50%;
+
+            background-color: #fff;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            background-color: #fff;
+        }
+    }
+
+    .partnership__item:nth-child(even) .partnership__divider {
+        left: auto;
+        right: 0;
+
+        &::before {
+            left: auto;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        &::after {
+            left: auto;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+
+    .partnership__item:nth-last-child(2) .partnership__divider {
+        &::after {
+            height: 50%;
+        }
+    }
+
+    .partnership__item:last-child .partnership__divider {
+        left: -117%;
+        right: auto;
+
+        &::before {
+            top: -75px;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}
+
+
 @media (max-width: 767px) {
     .partnership__inner {
         padding: 60px 40px 40px;
     }
 
-    .partnership__list {
-        &::after {
-            background-image: none;
-        }
-    }
-
     .partnership__item {
-        position: relative;
         height: auto;
         margin-bottom: 80px;
-
-        &::before {
-            content: '';
-            position: absolute;
-            width: 12px;
-            height: 12px;
-            top: 35px;
-            right: -75%;
-            transform: translateX(-50%);
-            background-color: #fff;
-            border-radius: 50%
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            width: 4px;
-            height: calc(100% - 94px);
-            top: 42px;
-            right: -70%;
-            transform: translateX(-50%);
-
-            background-color: #fff;
-        }
-
-        &:nth-child(2n) {
-            &::before {
-                left: -74%;
-                transform: translateX(50%);
-            }
-
-            &::after {
-                left: -69%;
-                transform: translateX(50%);
-            }
-        }
 
         &:nth-child(2) {
             margin-top: 55px;
@@ -174,7 +213,7 @@
 
     .partnership__number {
         font-size: 50px;
-        line-height: 1.95;
+        line-height: 1.45;
 
         border-width: 5px;
     }
@@ -182,9 +221,27 @@
     .partnership__text {
         font-size: 16px;
     }
+
+    .partnership__divider {
+        &::before {
+            width: 12px;
+            height: 12px;
+        }
+
+        &::after {
+            width: 4px;
+        }
+    }
+
+    .partnership__item:last-child .partnership__divider {
+        &::before {
+            top: -55px;
+        }
+    }
+
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
     .partnership__inner {
         padding: 35px 20px 30px;
     }
@@ -202,13 +259,19 @@
     }
 
     .partnership__number {
-        font-size: 30px;
-        line-height: 1.95;
+        font-size: 27px;
+        line-height: 2.2;
         border-width: 2px;
     }
 
     .partnership__text {
         font-size: 10px;
         line-height: 1.2;
+    }
+
+    .partnership__item:last-child .partnership__divider {
+        &::before {
+            top: -15px;
+        }
     }
 }

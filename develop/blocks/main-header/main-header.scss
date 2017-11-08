@@ -6,19 +6,24 @@
   transform: translateX(-50%);
   padding-top: 15px;
   padding-bottom: 15px;
-  
+
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  
+
   font-family: $opsans;
 }
 
 .main-header__logo {
-  width: 150px;
-  height: 75px;
+  max-width: 40%;
   background-color: #eee;
+
+  img {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+  }
 }
 
 .main-header__tel {
@@ -26,7 +31,7 @@
   margin-bottom: 15px;
   border-radius: 13%/50%;
   border: 1px solid #3eb5f1;
-  
+
   color: #f2f2f2;
   font-size: 20px;
   font-weight: 300;
@@ -34,7 +39,7 @@
 
 .main-header__text {
   padding: 0 12px;
-  
+
   color: #f2f2f2;
   font-size: 18px;
   font-weight: 300;
@@ -48,20 +53,15 @@
 }
 
 @media (max-width: 480px) {
-  .main-header__logo {
-    width: 98px;
-    height: 44px;
-  }
-  
   .main-header__tel {
     padding: 9px 12px;
-    
+
     font-size: 14px;
   }
-  
+
   .main-header__text {
     padding: 0 8px;
-    
+
     font-size: 13px;
   }
 }

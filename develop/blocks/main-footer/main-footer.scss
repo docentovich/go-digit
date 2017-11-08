@@ -17,9 +17,14 @@
 }
 
 .main-footer__logo {
-    width: 150px;
-    height: 75px;
+    max-width: 40%;
     background-color: #eee;
+
+    img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+    }
 }
 
 .main-footer__tel {
@@ -53,12 +58,7 @@
         padding-top: 30px;
         padding-bottom: 15px;
     }
-
-    .main-footer__logo {
-        width: 98px;
-        height: 44px;
-    }
-
+    
     .main-footer__tel {
         padding: 9px 12px;
 

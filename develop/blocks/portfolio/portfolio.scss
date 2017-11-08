@@ -24,6 +24,11 @@
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
+
+  overflow: hidden;
+  height: auto;
+  maxHeight: 1200px;
+  transition: max-height 300ms ease;
 }
 
 .portfolio__item {
@@ -33,9 +38,11 @@
   margin: 0 5px 7px;
   background-color: #e7a580;
 
-  &:nth-of-type(n+5) {
-      display: none;
-  }
+  // &:nth-of-type(n+5) {
+  //     .portfolio__link {
+  //         padding-top: 0;
+  //     }
+  // }
 }
 
 .portfolio__link {
