@@ -1,7 +1,9 @@
 .clients {
   background-color: #fafafa;
-  
+
   font-family: $opsans;
+
+  display: none;
 }
 
 .clients__inner {
@@ -12,7 +14,7 @@
 
 .clients__heading {
   @include heading();
-  
+
   margin-bottom: 50px;
 }
 
@@ -27,11 +29,11 @@
   position: relative;
   flex: 1 1 auto;
   margin-left: 25px;
-  
+
   &:first-child {
     margin-left: 0;
   }
-  
+
   img {
     position: relative;
     width: auto;
@@ -48,11 +50,11 @@
     padding-top: 15px;
     padding-bottom: 35px;
   }
-  
+
   .clients__heading {
     margin-bottom: 18px;
   }
-  
+
   .clients__slide:not(:first-child) {
     margin-left: 15px;
   }

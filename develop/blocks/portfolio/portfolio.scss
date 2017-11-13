@@ -36,13 +36,49 @@
   flex: 1 1 auto;
   width: 40%;
   margin: 0 5px 7px;
-  background-color: #e7a580;
+  background-color: #2aabd2;
 
   // &:nth-of-type(n+5) {
   //     .portfolio__link {
   //         padding-top: 0;
   //     }
   // }
+
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:nth-child(1) {
+      background-image: url('../images/portfolio1.jpg');
+  }
+
+  &:nth-child(2) {
+      background-image: url('../images/portfolio2.jpg');
+  }
+
+  &:nth-child(3) {
+      background-image: url('../images/portfolio3.jpg');
+  }
+
+  &:nth-child(4) {
+      background-image: url('../images/portfolio4.jpg');
+  }
+
+  &:nth-child(5) {
+      background-image: url('../images/portfolio5.jpg');
+  }
+
+  &:nth-child(6) {
+      background-image: url('../images/portfolio6.jpg');
+  }
+
+  &:nth-child(7) {
+      background-image: url('../images/portfolio7.jpg');
+  }
+
+  &:nth-child(8) {
+      background-image: url('../images/portfolio8.jpg');
+  }
 }
 
 .portfolio__link {
