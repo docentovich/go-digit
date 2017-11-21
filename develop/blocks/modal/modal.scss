@@ -69,5 +69,6 @@
 }
 
 body.modal-open {
+    overflow: auto !important;
     padding-right: 0 !important;
 }

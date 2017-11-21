@@ -607,8 +607,7 @@ div.pagination ul li a span {
       padding-right: 10px; } }
 
 .main-footer__logo {
-  max-width: 40%;
-  background-color: #eee; }
+  max-width: 40%; }
   .main-footer__logo img {
     width: 100%;
     max-width: 220px;
@@ -689,8 +688,7 @@ div.pagination ul li a span {
       padding-right: 10px; } }
 
 .main-header__logo {
-  max-width: 40%;
-  background-color: #eee; }
+  max-width: 40%; }
   .main-header__logo img {
     width: 100%;
     max-width: 220px;
@@ -829,6 +827,7 @@ div.pagination ul li a span {
       font-size: 12px; } }
 
 body.modal-open {
+  overflow: auto !important;
   padding-right: 0 !important; }
 
 .partnership {
